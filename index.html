@@ -1,21 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Web bán thức ăn</title>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE-edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="main.css">
 
-    </head>
-    <body>
-        <h1>I love you</h1>
-        <div id="wrapper">
-            <div id="header">
-                <a href="" class="logo">
-                    <img src="picture/logo.png" alt="">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <a href="" class="logo">
+                <img src="picture/logohcmute.png" alt="" width="110px">
+            </a>
+            <div id="menu">
+                <div class="item">
+                    <a href="">Trang chủ</a>
+                </div>
+                <div class="item">
+                    <a href="" class="click" onclick="scrollToExercise(event)">Bài tập</a>
+                </div>
+                <div class="item">
+                    <a href="">Blog</a>
+                </div>
+                <div class="item">
+                    <a href="">Liên hệ</a>
+                </div>
+            </div>
+            <div id="actions">
+                <div class="item" onclick="toggleForm()">
+                    <img src="picture/ava.png" alt="chưa có">
+                </div>
+                <div class="overlay" id="overlay" onclick="toggleForm()"></div>
+                <div class="form-popup" id="formPopup">
+                    <span class="close-btn" onclick="toggleForm()">&times;</span>
+                    <h3>Thông tin sinh viên</h3>
+                    <form>
+                        <img src="picture/avatar.jpg" alt="alt" class="avata" width="60px"><br>
+                        <label for="name">Châu Văn Thân</label><br>
+                        <label>22110425</label><br>
+                        <label>thanchau.100100@gmail.com</label>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="banner">
+            <div class="box-right">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+            <div class="to-bottom">
+                <a href="">
+                    <img src="picture/bottom.png" alt="">
                 </a>
-                <div id="menu">
+            </div>
+        </div>
+        <div id="wp-products">
+            <h2 id="exercise">BÀI TẬP</h2>
+            <ul id="list-products">
+                <div class="item">
+                    <img src="picture/logohcmute.png" alt="" width="180px">
+                    <div class="name">Bài tập 1</div>
+                    <a class="survey" href="https://demo1-1-ukx0.onrender.com/Baitapchuong4/">Survey</a>
+                </div>
+                <div class="item">
+                    <img src="picture/logohcmute.png" alt="" width="180px">
+                    <div class="name">Bài tập 1</div>
+                    <a class="survey" href="">Survey</a>
+                </div>
+                <div class="item">
+                    <img src="picture/logohcmute.png" alt="" width="180px">
+                    <div class="name">Bài tập 1</div>
+                    <a class="survey" href="">Survey</a>
+                </div>
+                <div class="item">
+                    <img src="picture/logohcmute.png" alt="" width="180px">
+                    <div class="name">Bài tập 1</div>
+                    <a class="survey" href="">Survey</a>
+                </div>
+                <div class="item">
+                    <img src="picture/logohcmute.png" alt="" width="180px">
+                    <div class="name">Bài tập 1</div>
+                    <a class="survey" href="">Survey</a>
+                </div>
+                <div class="item">
+                    <img src="picture/logohcmute.png" alt="" width="180px">
+                    <div class="name">Bài tập 1</div>
+                    <a class="survey" href="">Survey</a>
+                </div>
+            </ul>
+            <div class="list-page">
+                <div class="item">
+                    <a href="">1</a>
+                </div>
+                <div class="item">
+                    <a href="">2</a>
+                </div>
+                <div class="item">
+                    <a href="">3</a>
+                </div>
+                <div class="item">
+                    <a href="">4</a>
+                </div>
+            </div>
+        </div>
+        <div id="saleoff">
+            <div class="box-left">
+                <h1>
+                    <span>GIẢM GIÁ LÊN ĐẾN</span>
+                    <span>45%</span>
+                </h1>
+            </div>
+            <div class="box-right"></div>
+        </div>
+        <div id="comment">
+            <h2>NHẬN XÉT CỦA KHÁCH HÀNG</h2>
+            <div id="comment-body">
+                <div class="prev">
+                    <a href="#">
+                        <img src="picture/back.png" alt="">
+                    </a>
+                </div>
+                <ul id="list-comment">
+                    <li class="item">
+                        <div class="avatar">
+                            <img src="picture/ava.jpg" alt="">
+                        </div>
+                        <div class="stars">
+                            <span>
+                                <img src="picture/star.png" alt="">
+                            </span>
+                            <span>
+                                <img src="picture/star.png" alt="">
+                            </span>
+                            <span>
+                                <img src="picture/star.png" alt="">
+                            </span>
+                            <span>
+                                <img src="picture/star.png" alt="">
+                            </span>
+                            <span>
+                                <img src="picture/star.png" alt="">
+                            </span>
+                        </div>
+                        <div class="name">Châu Văn Thân</div>
+                        <div class="Text">
+                            <p>Very good for lunch</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="avatar">
+                            <img src="picture/ava.jpg" alt="">
+                        </div>
+                        <div class="stars">
+                            <span>
+                                <img src="picture/star.png" alt="">
+                            </span>
+                            <span>
+                                <img src="picture/star.png" alt="">
+                            </span>
+                            <span>
+                                <img src="picture/star.png" alt="">
+                            </span>
+                            <span>
+                                <img src="picture/star.png" alt="">
+                            </span>
+                            <span>
+                                <img src="picture/star.png" alt="">
+                            </span>
+                        </div>
+                        <div class="name">Châu Văn Thân</div>
+                        <div class="Text">
+                            <p>Very good for lunch</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="avatar">
+                            <img src="picture/ava.jpg" alt="">
+                        </div>
+                        <div class="stars">
+                            <span>
+                                <img src="picture/star.png" alt="">
+                            </span>
+                            <span>
+                                <img src="picture/star.png" alt="">
+                            </span>
+                            <span>
+                                <img src="picture/star.png" alt="">
+                            </span>
+                            <span>
+                                <img src="picture/star.png" alt="">
+                            </span>
+                            <span>
+                                <img src="picture/star.png" alt="">
+                            </span>
+                        </div>
+                        <div class="name">Châu Văn Thân</div>
+                        <div class="Text">
+                            <p>Very good for lunch</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="next">
+                    <a href="#">
+                        <img src="picture/next.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="box">
+                <div class="logo">
+                    <img src="picture/logo.png" alt="">
+                </div>
+                <p>Cung cấp sản phẩm với chất lượng an toàn cho quý khách</p>
+            </div>
+            <div class="box">
+                <h3>NỘI DUNG</h3>
+                <ul class="quick-menu">
                     <div class="item">
                         <a href="">Trang chủ</a>
                     </div>
@@ -28,332 +235,18 @@
                     <div class="item">
                         <a href="">Liên hệ</a>
                     </div>
-                </div>
-                <div id="actions">
-                    <div class="item">
-                        <img src="picture/cart.png" alt="chưa có hình">
-                    </div>
-                    <div class="item">
-                        <img src="picture/ava.png" alt="chưa có">
-                    </div>
-                </div>
-            </div>
-            <div id="banner">
-                <div class="box-left">
-                    <h2>
-                        <span>THỨC ĂN</span>
-                        <br>
-                        <span>THƯỢNG HẠNG</span>
-                    </h2>
-                    <p>Chuyên cung cấp các mon ăn dinh dưỡng</p>
-                    <button>Mua ngay</button>
-                </div>
-                <div class="box-right">
-                    <img src="picture/pic1.png" alt="">
-                    <img src="picture/pic1.png" alt="">
-                    <img src="picture/pic1.png" alt="">
-                </div>
-                <div class="to-bottom">
-                    <a href="">
-                        <img src="picture/bottom.png" alt="">
-                    </a>
-                </div>
-            </div>
-            <div id="wp-products">
-                <h2>SẢN PHẨM CỦA CHÚNG TÔI</h2>
-                <ul id="list-products">
-                    <div class="item">
-                        <img src="picture/product1.png" alt="">
-                        <div class="stars">
-                            <span>
-                                <img src="picture/star.png" alt="">
-                            </span>
-                            <span>
-                                <img src="picture/star.png" alt="">
-                            </span>
-                            <span>
-                                <img src="picture/star.png" alt="">
-                            </span>
-                            <span>
-                                <img src="picture/star.png" alt="">
-                            </span>
-                            <span>
-                                <img src="picture/star.png" alt="">
-                            </span>
-                        </div>
-                        <div class="name">Món ăn 1</div>
-                        <div class="desc">Mô Tả Ngắn Cho Sản Phẩm</div>
-                        <div class="price">30.000Vnd</div>
-                    </div>
-                    <div class="item">
-                        <img src="picture/product1.png" alt="">
-                        <div class="stars">
-                            <span>
-                                <img src="picture/star.png" alt="">
-                            </span>
-                            <span>
-                                <img src="picture/star.png" alt="">
-                            </span>
-                            <span>
-                                <img src="picture/star.png" alt="">
-                            </span>
-                            <span>
-                                <img src="picture/star.png" alt="">
-                            </span>
-                            <span>
-                                <img src="picture/star.png" alt="">
-                            </span>
-                        </div>
-                        <div class="name">Món ăn 1</div>
-                        <div class="desc">Mô Tả Ngắn Cho Sản Phẩm</div>
-                        <div class="price">30.000Vnd</div>
-                    </div>
-                    <div class="item">
-                        <img src="picture/product1.png" alt="">
-                        <div class="stars">
-                            <span>
-                                <img src="picture/star.png" alt="">
-                            </span>
-                            <span>
-                                <img src="picture/star.png" alt="">
-                            </span>
-                            <span>
-                                <img src="picture/star.png" alt="">
-                            </span>
-                            <span>
-                                <img src="picture/star.png" alt="">
-                            </span>
-                            <span>
-                                <img src="picture/star.png" alt="">
-                            </span>
-                        </div>
-                        <div class="name">Món ăn 1</div>
-                        <div class="desc">Mô Tả Ngắn Cho Sản Phẩm</div>
-                        <div class="price">30.000Vnd</div>
-                    </div>
-                    <div class="item">
-                        <img src="picture/product1.png" alt="">
-                        <div class="stars">
-                            <span>
-                                <img src="picture/star.png" alt="">
-                            </span>
-                            <span>
-                                <img src="picture/star.png" alt="">
-                            </span>
-                            <span>
-                                <img src="picture/star.png" alt="">
-                            </span>
-                            <span>
-                                <img src="picture/star.png" alt="">
-                            </span>
-                            <span>
-                                <img src="picture/star.png" alt="">
-                            </span>
-                        </div>
-                        <div class="name">Món ăn 1</div>
-                        <div class="desc">Mô Tả Ngắn Cho Sản Phẩm</div>
-                        <div class="price">30.000Vnd</div>
-                    </div>
-                    <div class="item">
-                        <img src="picture/product1.png" alt="">
-                        <div class="stars">
-                            <span>
-                                <img src="picture/star.png" alt="">
-                            </span>
-                            <span>
-                                <img src="picture/star.png" alt="">
-                            </span>
-                            <span>
-                                <img src="picture/star.png" alt="">
-                            </span>
-                            <span>
-                                <img src="picture/star.png" alt="">
-                            </span>
-                            <span>
-                                <img src="picture/star.png" alt="">
-                            </span>
-                        </div>
-                        <div class="name">Món ăn 1</div>
-                        <div class="desc">Mô Tả Ngắn Cho Sản Phẩm</div>
-                        <div class="price">30.000Vnd</div>
-                    </div>
-                    <div class="item">
-                        <img src="picture/product1.png" alt="">
-                        <div class="stars">
-                            <span>
-                                <img src="picture/star.png" alt="">
-                            </span>
-                            <span>
-                                <img src="picture/star.png" alt="">
-                            </span>
-                            <span>
-                                <img src="picture/star.png" alt="">
-                            </span>
-                            <span>
-                                <img src="picture/star.png" alt="">
-                            </span>
-                            <span>
-                                <img src="picture/star.png" alt="">
-                            </span>
-                        </div>
-                        <div class="name">Món ăn 1</div>
-                        <div class="desc">Mô Tả Ngắn Cho Sản Phẩm</div>
-                        <div class="price">30.000Vnd</div>
-                    </div>
                 </ul>
-                <div class="list-page">
-                    <div class="item">
-                        <a href="">1</a>
-                    </div>
-                    <div class="item">
-                        <a href="">2</a>
-                    </div>
-                    <div class="item">
-                        <a href="">3</a>
-                    </div>
-                    <div class="item">
-                        <a href="">4</a>
-                    </div>
-                </div>
             </div>
-            <div id="saleoff">
-                <div class="box-left">
-                    <h1>
-                        <span>GIẢM GIÁ LÊN ĐẾN</span>
-                        <span>45%</span>
-                    </h1>
-                </div>
-                <div class="box-right"></div>
-            </div>
-            <div id="comment">
-                <h2>NHẬN XÉT CỦA KHÁCH HÀNG</h2>
-                <div id="comment-body">
-                    <div class="prev">
-                        <a href="#">
-                            <img src="picture/back.png" alt="">
-                        </a>
-                    </div>
-                    <ul id="list-comment">
-                        <li class="item">
-                            <div class="avatar">
-                                <img src="picture/ava.jpg" alt="">
-                            </div>
-                            <div class="stars">
-                                <span>
-                                    <img src="picture/star.png" alt="">
-                                </span>
-                                <span>
-                                    <img src="picture/star.png" alt="">
-                                </span>
-                                <span>
-                                    <img src="picture/star.png" alt="">
-                                </span>
-                                <span>
-                                    <img src="picture/star.png" alt="">
-                                </span>
-                                <span>
-                                    <img src="picture/star.png" alt="">
-                                </span>
-                            </div>
-                            <div class="name">Châu Văn Thân</div>
-                            <div class="Text">
-                                <p>Very good for lunch</p>
-                            </div>
-                        </li>
-                        <li class="item">
-                            <div class="avatar">
-                                <img src="picture/ava.jpg" alt="">
-                            </div>
-                            <div class="stars">
-                                <span>
-                                    <img src="picture/star.png" alt="">
-                                </span>
-                                <span>
-                                    <img src="picture/star.png" alt="">
-                                </span>
-                                <span>
-                                    <img src="picture/star.png" alt="">
-                                </span>
-                                <span>
-                                    <img src="picture/star.png" alt="">
-                                </span>
-                                <span>
-                                    <img src="picture/star.png" alt="">
-                                </span>
-                            </div>
-                            <div class="name">Châu Văn Thân</div>
-                            <div class="Text">
-                                <p>Very good for lunch</p>
-                            </div>
-                        </li>
-                        <li class="item">
-                            <div class="avatar">
-                                <img src="picture/ava.jpg" alt="">
-                            </div>
-                            <div class="stars">
-                                <span>
-                                    <img src="picture/star.png" alt="">
-                                </span>
-                                <span>
-                                    <img src="picture/star.png" alt="">
-                                </span>
-                                <span>
-                                    <img src="picture/star.png" alt="">
-                                </span>
-                                <span>
-                                    <img src="picture/star.png" alt="">
-                                </span>
-                                <span>
-                                    <img src="picture/star.png" alt="">
-                                </span>
-                            </div>
-                            <div class="name">Châu Văn Thân</div>
-                            <div class="Text">
-                                <p>Very good for lunch</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="next">
-                        <a href="#">
-                            <img src="picture/next.png" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div id="footer">
-                <div class="box">
-                    <div class="logo">
-                        <img src="picture/logo.png" alt="">
-                    </div>
-                    <p>Cung cấp sản phẩm với chất lượng an toàn cho quý khách</p>
-                </div>
-                <div class="box">
-                    <h3>NỘI DUNG</h3>
-                    <ul class="quick-menu">
-                        <div class="item">
-                            <a href="">Trang chủ</a>
-                        </div>
-                        <div class="item">
-                            <a href="">Sản phẩm</a>
-                        </div>
-                        <div class="item">
-                            <a href="">Blog</a>
-                        </div>
-                        <div class="item">
-                            <a href="">Liên hệ</a>
-                        </div>
-                    </ul>
-                </div>
-                <div class="box">
-                    <h3>LIÊN HỆ</h3>
-                    <form action="">
-                        <input type="text" placeholder="Địa chỉ email">
-                        <button>Nhận tin</button>
-                    </form>
-                </div>
+            <div class="box">
+                <h3>LIÊN HỆ</h3>
+                <form action="">
+                    <input type="text" placeholder="Địa chỉ email">
+                    <button>Nhận tin</button>
+                </form>
             </div>
         </div>
-        <script src="main.js"></script>
-    </body>
-</html> 
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
